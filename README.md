@@ -6,3 +6,7 @@ Based around the Google AIY Vision Kit's Joy Detector, create music by changing 
 
 ## Setup
 * Grab yourself a Vision Kit, which comes with a Pi Zero WH, and download the latest OS Image [from Google](https://github.com/google/aiyprojects-raspbian/releases) - I'm using 2019-11-13.
+
+
+## Resources
+* Vision Kit Documentation: https://aiyprojects.readthedocs.io/en/latest/vision.html
