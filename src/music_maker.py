@@ -39,12 +39,19 @@ from aiy.vision.streaming import svg
 
 logger = logging.getLogger(__name__)
 
-JOY_COLOR = (255, 70, 0)
-SAD_COLOR = (0, 0, 64)
+#BUTTON  COLOURS
+RED = (255, 0, 0)
+ORANGE = (255, 136, 0)
+YELLOW = (255, 251, 15)
+GREEN = (15, 255, 91)
+BLUE = (15, 163, 255)
+PURPLE = (135, 15, 255)
 
+#JOY SCORE
 JOY_SCORE_HIGH = 0.85
 JOY_SCORE_LOW = 0.10
 
+#SOUNDS
 JOY_SOUND = ('C5q', 'E5q', 'C6q')
 SAD_SOUND = ('C6q', 'E5q', 'C5q')
 MODEL_LOAD_SOUND = ('C6w', 'c6w', 'C6w')
@@ -256,7 +263,7 @@ class Animator(Service):
 
     def process(self, joy_score):
         if joy_score > 0:
-            self._leds.update(Leds.rgb_on(Color.blend(JOY_COLOR, SAD_COLOR, joy_score)))
+            self._leds.update(Leds.rgb_on(Color.blend(YELLOW, RED, joy_score)))
         else:
             self._leds.update(Leds.rgb_off())
 
