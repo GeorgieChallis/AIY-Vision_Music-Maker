@@ -53,6 +53,7 @@ JOY_SCORE_LOW = 0.10
 
 #SOUNDS
 CMAJ = ('C4h', 'D4h', 'E4h', 'G4h' 'A4h', 'C5h')
+FsMAJ = ('f4h','g4h','a4h','c4h','d4h')
 JOY_SOUND = ('C5q', 'E5q', 'C6q')
 SAD_SOUND = ('C6q', 'E5q', 'C5q')
 MODEL_LOAD_SOUND = ('C6w', 'c6w', 'C6w')
